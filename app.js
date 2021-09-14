@@ -18,5 +18,10 @@ function clickHandler() {
 		.then((json) => {
 			var translatedText = json.contents.translated;
 			outputText.innerText = translatedText;
-		});
+		})
+		.catch(errorHandler);
+}
+
+function errorHandler(error) {
+	alert("Something wrong with server ! Try again after sometime");
 }
