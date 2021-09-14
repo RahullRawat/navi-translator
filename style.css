@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;500&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+body {
+	font-family: "Bangers", cursive;
+	/* height: 80vh; */
+	background-image: linear-gradient(
+			to right,
+			rgba(48, 137, 202, 0.6),
+			rgba(96, 173, 241, 0.6)
+		),
+		url(images/avatar.jpg);
+}
+
+nav {
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 5px;
+	padding: 3rem;
+	color: #e6f4f1;
+}
+
+main {
+	display: flex;
+	text-align: center;
+	max-width: 1200px;
+	margin: auto;
+}
+
+#translate-input,
+#translate-output {
+	height: 50vh;
+	width: 70%;
+	font-size: 24px;
+	font-family: inherit;
+	letter-spacing: 2px;
+	display: block;
+	margin-top: 2rem;
+	opacity: 0.3;
+	padding: 1rem;
+	outline: none;
+}
+
+#translate-input::placeholder {
+	font-size: 24px;
+	font-family: "Bangers", cursive;
+}
+
+#translate-input:focus {
+	border: 2px solid #00295d;
+}
+
+main div {
+	height: 100%;
+	width: 40%;
+}
+
+#translate-btn {
+	font-size: 22px;
+	font-weight: 600;
+	font-family: inherit;
+	letter-spacing: 4px;
+	padding: 0.8rem 1.6rem;
+	color: #e6f4f1;
+	background-color: #00295d;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 13rem 1rem 0rem 1rem;
+}
+
+footer {
+	height: 20vh;
+	text-align: center;
+	color: #e6f4f1;
+	letter-spacing: 2.5px;
+	background-color: #00295d;
+	margin-top: 5rem;
+	padding: 2rem;
+}
+
+footer h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+footer p {
+	font-size: 21px;
+	max-width: 600px;
+	margin: auto;
+	line-height: 1.2;
+	margin-top: 15px;
+}
